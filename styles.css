@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #1f681a, #3eb46e, #26711c);
+}
+
+.calculator {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 10 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.calculator input {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  padding-left: 18px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 26px;
+  box-sizing: border-box;
+}
+
+.calculator .buttons {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.calculator button {
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #37894b;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.calculator button:hover {
+  background: #166126;
+}
+
+.calculator button:active {
+  background: #0f732b;
+}
+
+.calculator .buttons button.operator {
+  background: #e74c3c;
+}
+
+.calculator .buttons button.operator:hover {
+  background: #c0392b;
+}
+
+.calculator .buttons button.double {
+  grid-column: span 2;
+}
+
+.calculator .buttons button.triple {
+  grid-column: span 3;
+}
